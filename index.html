@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
   <title>Журнал партий</title>
 </head>
 <body>
@@ -14,15 +16,37 @@
       </div>
     </header>
     <main class="main">
-      <div class="contaner">
+      <div class="container">
         <div class="main_form">
           <form action="" class="main_form-magazine" method="get">
             <label class="main_form-magazine_party_name" for="party_name">Название партии:</label>
               <input class="main_form-magazine_party_name-input" type="text" id="party_name" name="party_name" required>
             <label class="main_form-magazine_party_size" for="party_size">Объём, л:</label>
-              <input class="main_form-magazine_party_size-input" type="text" id="party_size" name="party_size" required>
+              <input class="main_form-magazine_party_size-input" type="number" id="party_size" name="party_size" required>
                 <button type="submit">Добавить</button>  
           </form>
+        </div>
+        <div class="main_filter">
+          <label for="status_filter">Статус</label>
+          <select name="Фильтр" id="status_filter">
+            <option value="Все">Все</option>
+            <option value="В работе">В работе</option>
+            <option value="Готово">Готово</option>
+          </select>
+        </div>
+        
+        <div class="main_table">
+          <table class="main_table-form">
+            <thead>
+              <tr>
+                <th>Название</th>
+                <th>Объём, л</th>
+                <th>Статус</th>
+              </tr>
+            </thead>
+            <tbody class="main_table-form_body">
+            </tbody>
+          </table>
         </div>
       </div>
     </main>

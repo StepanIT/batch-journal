@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+}
+
+.header {
+
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header_headline {
+  margin: 0;
+  padding: 0;
+}
+
+.header_headerline-text {
+  text-align: center;
+}
+
+.main {
+
+}
+
+.main_form-magazine {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.main_form-magazine_party_name {
+  
+}
+
+.main_form-magazine_party_name-input {
+  
+}
+
+.main_form-magazine_party_size {
+  
+}
+
+.main_form-magazine_party_size-input {
+  
+}
+
+.main_table {
+  display: flex;
+  justify-content: center;
+}
+
+.main_table-form {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main_table-form_body {
+
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
